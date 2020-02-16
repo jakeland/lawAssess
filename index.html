@@ -12,6 +12,8 @@
   <!-- Place favicon.ico in the root directory -->
   <!-- using bootstrap to support mobile quickly. --> 
   <link rel="stylesheet" href="css/vendor/bootstrap.css">
+  <!-- JMC: optimize after getting everything set up -->
+  <link rel="stylesheet" href="css/build/index.css"> 
   <meta name="theme-color" content="#fafafa">
 </head>
 
@@ -21,31 +23,77 @@
   <![endif]-->
   <div class="container-fluid">
     <div class="row">
-      <div class="col hero">
-        
-      </div>
+      <div class="col">
+        <div class="imageHolder hero">
+          <div class="inputBox">
+            <h1 class="callToAction">FIND THE BEST LOCAL ATTORNEYS</h1>
+            <input/>
+            <input/>
+            <input/>
+          </div>
+          <img class="img-fluid" src="./img/lawyer_hand2.png"/>
+        </div>
+      </div>  
     </div>
   </div>
   <div class="container">
     <div class="row"> 
       <div class="col">
-        <p>Featured Articles</p>
+        <h2 class="sectionTitle">Featured Articles</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <img class="img-fluid" src="./img/holding_pen.png" />
+        <h3>Woman holding a pen</h3>
+      </div>
+      <div class="col-12 col-md-6">
+        <img class="img-fluid" src="./img/cactus.png" />
+        <h3>Cacti are great for surviving in the desert</h3>
+      </div>
+      <!--JMC need to update the spacing here --> 
+      <div class="col-12 col-md-4">
+        <img class="img-fluid" src="./img/puppy.png" />
+        <h3>Look at this cute puppy</h3>
+      </div>
+      <div class="col-12 col-md-4">
+        <img class="img-fluid" src="./img/woman_flower.png" />
+        <h3>I crashed 30+ weddings</h3>
+      </div>
+      <div class="col-12 col-md-4">
+        <img class="img-fluid" src="./img/random_words.png" />
+        <h3>Random picture with lines and words</h3>
       </div>
     </div>
   </div>
-  <div class="container-fluid">
+  <div class="container stateLawyers">
     <div class="row">
       <div class="col">
-        <p>Lawyers in your state</p>
+        <h2 class="sectionTitle">Lawyers In Your State</h2>
+      </div>
+      <div class="col-12">
+        <!--JMC: need to change this --> 
+        <img class="img-fluid" src="./img/america_blue.png" />
       </div>
     </div>
   </div>
-  <!-- could probably put it into the above container, but at this point, let's keep them seperate --> 
-  <!-- if we decide to dynamically render sections of the page, it works better --> 
-  <div class="container-fluid"> 
+  <div class="container footer">
     <div class="row">
-      <div class="col">
-        <p>Footer Stuff"</p>
+      <div class="col-8 col-md-8">
+        <h3>Lawyer.com</h3>
+        <!--fix small font -->
+        <p>2020 Lawyer.com, All rights reserved.</p>
+        <a>Terms of Use</a>
+        <a>Privacy Policy</a>
+        <a>Marketing Agreement</a>
+        <div>facebook symbol</div>
+        <div>twitter symbol</div>
+      </div>
+      <div class="col-4 col-md-4">
+        <p>25 Mountainview Blvd</p>
+        <p>Basking Ridge NJ</p>
+        <p>555-555-5555</p>
+        <p>info@lawyer.com</p>
       </div>
     </div>
   </div>

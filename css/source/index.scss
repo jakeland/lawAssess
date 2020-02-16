@@ -1,3 +1,78 @@
 //Most stack's seem have a prefered method for asset management.  
 //This method is built to make it fairly easy to convert. 
+$nav-button-color: #11b59b;
+$drop-down-button-color: #49c6ae;
+$drop-down-menu-color: #51cbb0;
+$footer-color: #3a3a3a;
+$lawyer-state: #01999d;
+$resources-button: #00cea6;
+//depending on this answer, can switch it with just one color.
+
+@mixin gutter-fill{
+	position:absolute;
+	top: 0;
+	left: 50%;
+	content: '';
+	transform: translate(-50%);
+	height:100%;
+	width:100vw;
+}
+
+.callToAction{
+	font-size:80px;
+}
+
+.hero{
+	width:100%;
+
+}
+
+h2.sectionTitle{
+	text-align:center;	
+}
+
+//fixes issues where setting a background using :before doesn't account for the scrollbar. 
+html, body {
+	overflow-x:hidden;
+}
+
+.inputBox{
+	position:absolute;
+	background: white;
+	width:36%;
+	height:70%;
+	left:12%;
+	top:10%;
+	opacity:70%;
+}
+
+//JMC: come back and optimize;
+.imageHolder{
+	&.hero{
+		max-width:3000px;
+ 		margin:0 auto;
+	}
+}
+
+.stateLawyers{
+	position:relative;
+	background: $lawyer-state;
+
+ 	
+}
+.stateLawyers:before{
+	@include gutter-fill;
+	background: $lawyer-state;
+}
+
+.footer{
+	position:relative;
+	background:$footer-color;
+}
+
+.footer:before{
+	@include gutter-fill;
+	position:absolute;
+	background:$footer-color;
+}
 

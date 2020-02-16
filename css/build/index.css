@@ -1,0 +1,55 @@
+.callToAction {
+  font-size: 80px; }
+
+.hero {
+  width: 100%; }
+
+h2.sectionTitle {
+  text-align: center; }
+
+html, body {
+  overflow-x: hidden; }
+
+.inputBox {
+  position: absolute;
+  background: white;
+  width: 36%;
+  height: 70%;
+  left: 12%;
+  top: 10%;
+  opacity: 70%; }
+
+.imageHolder.hero {
+  max-width: 3000px;
+  margin: 0 auto; }
+
+.stateLawyers {
+  position: relative;
+  background: #01999d; }
+
+.stateLawyers:before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  content: '';
+  transform: translate(-50%);
+  height: 100%;
+  width: 100vw;
+  background: #01999d; }
+
+.footer {
+  position: relative;
+  background: #3a3a3a; }
+
+.footer:before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  content: '';
+  transform: translate(-50%);
+  height: 100%;
+  width: 100vw;
+  position: absolute;
+  background: #3a3a3a; }
+
+/*# sourceMappingURL=index.css.map */
