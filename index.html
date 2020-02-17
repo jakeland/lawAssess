@@ -7,14 +7,10 @@
   <title></title>
   <meta name="description" content="A Test Site, used for assessment purposes.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- jmc -return to this --> 
-<!--   <link rel="manifest" href="site.webmanifest"> -->
-  <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
   <!-- using bootstrap to support mobile quickly. --> 
   <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-  <!-- JMC: optimize after getting everything set up -->
   <link rel="stylesheet" href="css/build/index.css"> 
 
   <meta name="theme-color" content="#fafafa">
@@ -27,17 +23,20 @@
 
   <nav class="navbar fixed-top navStyle">
     <a class="navContent" href="#">Lawyer.com</a>
+
     <span class="right-section">
-      <a href="#">RESOURCES</a>
-      <a href="#">ABOUT</a>
-      <a href="#">GET IN TOUCH</a>
+      <span class="d-none d-md-inline-block">
+        <a class="menuNav" href="#">RESOURCES</a>
+        <a class="menuNav" href="#">ABOUT</a>
+      </span>
+      <a class="menuNav touchButton" href="#">GET IN TOUCH</a>
     </span>
 
   </nav>
 
   <div class="container-fluid nav-adjust">
     <div class="row">
-      <div class="col">
+      <div class="col" style="padding-left:0;padding-right:0;">
         <div class="imageHolder hero">
           <div class="inputBox">
             <div class="actionWrapper">
@@ -46,110 +45,100 @@
               <!-- Example split danger button -->
               <p>Find our top picks in your area</p>
               <div class="heroSpacer">
-                <div class="btn-group heroGroup">
-                  <button type="button" class="btn dropdown-toggle wide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span style="float:left;">1. State</span>
-                    <span class="sr-only">Toggle Dropdown</span>
-                  </button>
-                  <div class="dropdown-menu dropdown-menu-right">
-                    <a href="#" class="dropdown-item" value="AL">Alabama</a>
-                    <a href="#" class="dropdown-item" value="AK">Alaska</a>
-                    <a href="#" class="dropdown-item" value="AZ">Arizona</a>
-                    <a href="#" class="dropdown-item" value="AR">Arkansas</a>
-                    <a href="#" class="dropdown-item" value="CA">California</a>
-                    <a href="#" class="dropdown-item" value="CO">Colorado</a>
-                    <a href="#" class="dropdown-item" value="CT">Connecticut</a>
-                    <a href="#" class="dropdown-item" value="DE">Delaware</a>
-                    <a href="#" class="dropdown-item" value="DC">District of Columbia</a>
-                    <a href="#" class="dropdown-item" value="FL">Florida</a>
-                    <a href="#" class="dropdown-item" value="GA">Georgia</a>
-                    <a href="#" class="dropdown-item" value="HI">Hawaii</a>
-                    <a href="#" class="dropdown-item" value="ID">Idaho</a>
-                    <a href="#" class="dropdown-item" value="IL">Illinois</a>
-                    <a href="#" class="dropdown-item" value="IN">Indiana</a>
-                    <a href="#" class="dropdown-item" value="IA">Iowa</a>
-                    <a href="#" class="dropdown-item" value="KS">Kansas</a>
-                    <a href="#" class="dropdown-item" value="KY">Kentucky</a>
-                    <a href="#" class="dropdown-item" value="LA">Louisiana</a>
-                    <a href="#" class="dropdown-item" value="ME">Maine</a>
-                    <a href="#" class="dropdown-item" value="MD">Maryland</a>
-                    <a href="#" class="dropdown-item" value="MA">Massachusetts</a>
-                    <a href="#" class="dropdown-item" value="MI">Michigan</a>
-                    <a href="#" class="dropdown-item" value="MN">Minnesota</a>
-                    <a href="#" class="dropdown-item" value="MS">Mississippi</a>
-                    <a href="#" class="dropdown-item" value="MO">Missouri</a>
-                    <a href="#" class="dropdown-item" value="MT">Montana</a>
-                    <a href="#" class="dropdown-item" value="NE">Nebraska</a>
-                    <a href="#" class="dropdown-item" value="NV">Nevada</a>
-                    <a href="#" class="dropdown-item" value="NH">New Hampshire</a>
-                    <a href="#" class="dropdown-item" value="NJ">New Jersey</a>
-                    <a href="#" class="dropdown-item" value="NM">New Mexico</a>
-                    <a href="#" class="dropdown-item" value="NY">New York</a>
-                    <a href="#" class="dropdown-item" value="NC">North Carolina</a>
-                    <a href="#" class="dropdown-item" value="ND">North Dakota</a>
-                    <a href="#" class="dropdown-item" value="OH">Ohio</a>
-                    <a href="#" class="dropdown-item" value="OK">Oklahoma</a>
-                    <a href="#" class="dropdown-item" value="OR">Oregon</a>
-                    <a href="#" class="dropdown-item" value="PA">Pennsylvania</a>
-                    <a href="#" class="dropdown-item" value="RI">Rhode Island</a>
-                    <a href="#" class="dropdown-item" value="SC">South Carolina</a>
-                    <a href="#" class="dropdown-item" value="SD">South Dakota</a>
-                    <a href="#" class="dropdown-item" value="TN">Tennessee</a>
-                    <a href="#" class="dropdown-item" value="TX">Texas</a>
-                    <a href="#" class="dropdown-item" value="UT">Utah</a>
-                    <a href="#" class="dropdown-item" value="VT">Vermont</a>
-                    <a href="#" class="dropdown-item" value="VA">Virginia</a>
-                    <a href="#" class="dropdown-item" value="WA">Washington</a>
-                    <a href="#" class="dropdown-item" value="WV">West Virginia</a>
-                    <a href="#" class="dropdown-item" value="WI">Wisconsin</a>
-                    <a href="#" class="dropdown-item" value="WY">Wyoming</a>
-                  </div>
+                <div class="select">
+                  <select name="state" id="state" onchange="enableSelect('#city')">
+                    <option value="1. State" disabled selected="true">1.State </option>
+                    <option value="Alabama">Alabama</option>
+                    <option value="Alaska">Alaska</option>
+                    <option value="Arizona">Arizona</option>
+                    <option value="Arkansas">Arkansas</option>
+                    <option value="California">California</option>
+                    <option value="Colorado">Colorado</option>
+                    <option value="Connecticut">Connecticut</option>
+                    <option value="Delaware">Delaware</option>
+                    <option value="District of Columbia">District of Columbia</option>
+                    <option value="Florida">Florida</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Hawaii">Hawaii</option>
+                    <option value="Idaho">Idaho</option>
+                    <option value="Illinois">Illinois</option>
+                    <option value="Indiana">Indiana</option>
+                    <option value="Iowa">Iowa</option>
+                    <option value="Kansas">Kansas</option>
+                    <option value="Kentucky">Kentucky</option>
+                    <option value="Louisiana">Louisiana</option>
+                    <option value="Maine">Maine</option>
+                    <option value="Maryland">Maryland</option>
+                    <option value="Massachusetts">Massachusetts</option>
+                    <option value="Michigan">Michigan</option>
+                    <option value="Minnesota">Minnesota</option>
+                    <option value="Mississippi">Mississippi</option>
+                    <option value="Missouri">Missouri</option>
+                    <option value="Montana">Montana</option>
+                    <option value="Nebraska">Nebraska</option>
+                    <option value="Nevada">Nevada</option>
+                    <option value="New Hampshire">New Hampshire</option>
+                    <option value="New Jersey">New Jersey</option>
+                    <option value="New Mexico">New Mexico</option>
+                    <option value="New York">New York</option>
+                    <option value="North Carolina">North Carolina</option>
+                    <option value="North Dakota">North Dakota</option>
+                    <option value="Ohio">Ohio</option>
+                    <option value="Oklahoma">Oklahoma</option>
+                    <option value="Oregon">Oregon</option>
+                    <option value="Pennsylvania">Pennsylvania</option>
+                    <option value="Rhode Island">Rhode Island</option>
+                    <option value="South Carolina">South Carolina</option>
+                    <option value="South Dakota">South Dakota</option>
+                    <option value="Tennessee">Tennessee</option>
+                    <option value="Texas">Texas</option>
+                    <option value="Utah">Utah</option>
+                    <option value="Vermont">Vermont</option>
+                    <option value="Virginia">Virginia</option>
+                    <option value="Washington">Washington</option>
+                    <option value="West Virginia">West Virginia</option>
+                    <option value="Wisconsin">Wisconsin</option>
+                    <option value="Wyoming">Wyoming</option>
+                  </select>
                 </div>
               </div>
               <div class="heroSpacer">
-                <div class="btn-group heroGroup">
-
-                    <button type="button" class="wide btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <span style="float:left">2. City</span>
-                      <span class="sr-only">Toggle Dropdown</span>
-                    </button>
-                  <div class="dropdown-menu dropdown-menu-right" >
-                    <a href="#" class="dropdown-item" value="ex1">Example City 1</a>
-                    <a href="#" class="dropdown-item" value="ex2">Example City 2</a>
-                    <a href="#" class="dropdown-item" value="ex3">Example City 3</a>
-                    <a href="#" class="dropdown-item" value="ex4">Example City 4</a>
-                    <a href="#" class="dropdown-item" value="ex5">Example City 5</a>
-                    <a href="#" class="dropdown-item" value="ex6">Example City 6</a>
-                    <a href="#" class="dropdown-item" value="ex7">Example City 7</a>
-                    <a href="#" class="dropdown-item" value="ex8">Example City 8</a>
-                    <a href="#" class="dropdown-item" value="ex9">Example City 9</a>
-                  </div>
+                <div class="select">
+                  <select name="city" id="city" disabled onchange="enableSelect('#lawArea')">
+                    <option value="2. City" disabled selected="true">2. City</option>
+                    <option value="ex1">Example City 1</option>
+                    <option value="ex2">Example City 2</option>
+                    <option value="ex3">Example City 3</option>
+                    <option value="ex4">Example City 4</option>
+                    <option value="ex5">Example City 5</option>
+                    <option value="ex6">Example City 6</option>
+                    <option value="ex7">Example City 7</option>
+                    <option value="ex8">Example City 8</option>
+                    <option value="ex9">Example City 9</option>
+                  </select>
                 </div>
               </div>
               <div class="heroSpacer">
-                <div class="btn-group heroGroup">
-                  <button type="button" class="btn dropdown-toggle dropdown wide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span style="float:left">3. Area of Law</span>
-                    <span class="sr-only">Toggle Dropdown for Area of Law</span>
-                  </button>
-                  <div class="dropdown-menu dropdown-menu-right">
-                    <a href="#" class="dropdown-item" value="accidentInjury">Accident & Injury</a>
-                    <a href="#" class="dropdown-item" value="BankruptcyDept">Bankruptcy & Debt</a>
-                    <a href="#" class="dropdown-item" value="Business">Business</a>
-                    <a href="#" class="dropdown-item" value="CivilHumanRights">Civil & Human Rights</a>
-                    <a href="#" class="dropdown-item" value="ConsumerRights">Consumer Rights</a>
-                    <a href="#" class="dropdown-item" value="CriminalLaw">Criminal Law</a>
-                    <a href="#" class="dropdown-item" value="DivorceFamilyLaw">Divorce & Family Law</a>
-                    <a href="#" class="dropdown-item" value="Estate">Estate</a>
-                    <a href="#" class="dropdown-item" value="Motor">Motor Vehicle</a>
-                    <a href="#" class="dropdown-item" value="Real Estate">Real Estate</a>
-                    <a href="#" class="dropdown-item" value="Other">Other</a>
-                  </div>
+                <div class="select" disabled="false">
+                  <select name="lawArea" id="lawArea" disabled>
+                    <option value="3. Area of Law" disabled selected="true">3. Area of Law</option>              
+                    <option value="accidentInjury">Accident & Injury</option>
+                    <option value="BankruptcyDept">Bankruptcy & Debt</option>
+                    <option value="Business">Business</option>
+                    <option value="CivilHumanRights">Civil & Human Rights</option>
+                    <option value="ConsumerRights">Consumer Rights</option>
+                    <option value="CriminalLaw">Criminal Law</option>
+                    <option value="DivorceFamilyLaw">Divorce & Family Law</option>
+                    <option value="Estate">Estate</option>
+                    <option value="Motor">Motor Vehicle</option>
+                    <option value="Real Estate">Real Estate</option>
+                    <option value="Other">Other</option>
+                  </select>
                 </div>
               </div>
            </div>
           </div>
-          <img class="img-fluid" src="./img/lawyer_hand2.png"/>
+          <img class="heroCheat" src="./img/lawyer_hand2.png"/>
         </div>
       </div>   
     </div>
@@ -157,13 +146,13 @@
   <div class="container">
     <div class="row"> 
       <div class="col">
-        <h2 class="sectionTitle">Featured Articles</h2>
+        <h2 class="sectionTitle" style="margin-top:30px;">Featured Articles</h2>
       </div>
     </div>
     <div class="row">
       <div class="col-12 col-sm-6 articleSection">
         <img class="img-fluid" src="./img/holding_pen.png" />
-        <h3 class="articleTitle">Woman holding a pen</h3>
+        <h3 class="articleTitle">Picture of a woman holding a pen</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
       <div class="col-12 col-sm-6">
@@ -171,7 +160,6 @@
         <h3 class="articleTitle">Cacti are great for surviving in the desert</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
-      <!--JMC need to update the spacing here --> 
       <div class="col-12 col-sm-4">
         <img class="img-fluid" src="./img/puppy.png" />
         <h3 class="articleTitle">Look at this cute puppy</h3>
@@ -189,8 +177,14 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-12">
-        <button class="outlineButton">See All Resources</button>
+      <div class="col-12 center">
+        <a href="#">
+          <div class="outlineButton">
+            <span class="inner">
+              See All Resources >
+            </span>
+          </div>
+        </a>
       </div>
     </div>
   </div>
@@ -393,7 +387,7 @@
   <div class="container footer">
     <div class="row">
       <div class="col-8 col-sm-8">
-        <h3>Lawyer.com</h3>
+        <h3 style="color:white">Lawyer.com</h3>
         &copy;2020 Lawyer.com, All rights reserved.
         <span class="legalLinks">       
           <a>Terms of Use</a>
@@ -407,7 +401,7 @@
       </div>
       <div class="col-4 col-sm-4 address">
         25 Mountainview Blvd
-        </br> <!-- using br because line break for formatting is correct-->
+        </br> <!-- using br because line break for formatting  address is correct-->
         Basking Ridge NJ
         <div class="contactLinks"  style="padding-top:20px;">
           <a href="tel:+555-555-5555">555-555-5555</a>
@@ -420,7 +414,7 @@
  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-
+  <script src="./js/index.js"></script>
   <!--
   Google Analytics: change UA-XXXXX-Y to be your site's ID. 
   <script>
