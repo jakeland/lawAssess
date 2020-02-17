@@ -1,5 +1,11 @@
 .actionWrapper {
+  color: blue;
+  font-family: 'Roboto', sans-serif;
   padding: 30px; }
+  .actionWrapper p {
+    font-size: 20px;
+    font-family: serif;
+    color: grey; }
 
 .hero {
   width: 100%; }
@@ -17,16 +23,10 @@
     color: white; }
   .heroGroup button, .heroGroup input, .heroGroup .dropdown-menu, .heroGroup .dropdown-item {
     background-color: #51cbb0;
-    color: white; }
+    color: white;
+    text-align: right; }
   .heroGroup, .heroGroup .wide, .heroGroup .dropdown-menu, .heroGroup .dropdown-item {
     width: 100%; }
-
-.heroDrop {
-  background-color: green;
-  border: 1px solid green; }
-  .heroDrop:focus, .heroDrop:focus-within, .heroDrop:visited, .heroDrop:hover, .heroDrop:active {
-    border: 1px solid green;
-    background-color: green; }
 
 h2.sectionTitle {
   text-align: center; }
@@ -41,10 +41,11 @@ html, body {
 .inputBox {
   position: absolute;
   background: white;
-  width: 680px;
+  max-width: 700px;
   left: 12%;
   top: 10%;
-  opacity: 70%; }
+  opacity: 70%;
+  width: 100%; }
   .inputBox .callToAction {
     font-size: 80px; }
 
@@ -56,8 +57,9 @@ html, body {
   height: 60px;
   padding-bottom: 30px;
   background-color: white; }
-  .navStyle a.navContent {
-    font-size: 32px; }
+  .navStyle a.navContent, .navStyle a.navContent:focus, .navStyle a.navContent:focus-within, .navStyle a.navContent:visited, .navStyle a.navContent:hover, .navStyle a.navContent:active {
+    font-size: 32px;
+    color: grey; }
 
 .nav-adjust {
   margin-top: 60px; }

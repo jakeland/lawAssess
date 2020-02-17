@@ -22,7 +22,14 @@ $nav-pb:30px;
 }
 
 .actionWrapper{
+	color:blue;
+	font-family: 'Roboto', sans-serif;
 	padding:30px;
+	p{
+		font-size:20px;
+		font-family: serif;
+		color: grey;
+	}
 }
 
 .hero{
@@ -31,6 +38,7 @@ $nav-pb:30px;
 }
 .heroSpacer{
 	//padding:0 20px;
+
 }
 .heroGroup{
 	position:relative;
@@ -51,21 +59,13 @@ $nav-pb:30px;
 	button, input, .dropdown-menu, .dropdown-item{
 		background-color: $drop-down-menu-color;
 		color: white;
+		text-align:right;
 	}
 	&,& .wide, .dropdown-menu, .dropdown-item{
 		width:100%;
 	}
 	.dropdown-menu{
 		
-	}
-}
-
-.heroDrop {
-	background-color: green;
-	border: 1px solid green;
-	&:focus, &:focus-within, &:visited, &:hover, &:active{
-		border: 1px solid green;
-		background-color: green;
 	}
 }
 
@@ -87,10 +87,11 @@ html, body {
 .inputBox{
 	position:absolute;
 	background: white;
-	width:680px; // done in the interest of speed. 
+	max-width:700px; // done in the interest of speed. 
 	left:12%;
 	top:10%;
 	opacity:70%;
+	width:100%;
 	.callToAction{
 		font-size:80px;
 	}
@@ -109,7 +110,11 @@ html, body {
 	padding-bottom: $nav-pb;
 	background-color:white;
 	a.navContent{
-		font-size:32px;
+		&, &:focus, &:focus-within, &:visited, &:hover, &:active{
+			font-size:32px;
+			color:grey;
+		}
+
 	}
 }
 
