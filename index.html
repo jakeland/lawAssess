@@ -7,14 +7,10 @@
   <title></title>
   <meta name="description" content="A Test Site, used for assessment purposes.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- jmc -return to this --> 
-<!--   <link rel="manifest" href="site.webmanifest"> -->
-  <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
   <!-- using bootstrap to support mobile quickly. --> 
   <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-  <!-- JMC: optimize after getting everything set up -->
   <link rel="stylesheet" href="css/build/index.css"> 
 
   <meta name="theme-color" content="#fafafa">
@@ -27,6 +23,7 @@
 
   <nav class="navbar fixed-top navStyle">
     <a class="navContent" href="#">Lawyer.com</a>
+
     <span class="right-section">
       <span class="d-none d-md-inline-block">
         <a class="menuNav" href="#">RESOURCES</a>
@@ -39,7 +36,7 @@
 
   <div class="container-fluid nav-adjust">
     <div class="row">
-      <div class="col">
+      <div class="col" style="padding-left:0;padding-right:0;">
         <div class="imageHolder hero">
           <div class="inputBox">
             <div class="actionWrapper">
@@ -149,13 +146,13 @@
   <div class="container">
     <div class="row"> 
       <div class="col">
-        <h2 class="sectionTitle">Featured Articles</h2>
+        <h2 class="sectionTitle" style="margin-top:30px;">Featured Articles</h2>
       </div>
     </div>
     <div class="row">
       <div class="col-12 col-sm-6 articleSection">
         <img class="img-fluid" src="./img/holding_pen.png" />
-        <h3 class="articleTitle">Woman holding a pen</h3>
+        <h3 class="articleTitle">Picture of a woman holding a pen</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
       <div class="col-12 col-sm-6">
@@ -163,7 +160,6 @@
         <h3 class="articleTitle">Cacti are great for surviving in the desert</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
-      <!--JMC need to update the spacing here --> 
       <div class="col-12 col-sm-4">
         <img class="img-fluid" src="./img/puppy.png" />
         <h3 class="articleTitle">Look at this cute puppy</h3>
@@ -181,8 +177,14 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-12">
-        <button class="outlineButton">See All Resources</button>
+      <div class="col-12 center">
+        <a href="#">
+          <div class="outlineButton">
+            <span class="inner">
+              See All Resources >
+            </span>
+          </div>
+        </a>
       </div>
     </div>
   </div>
@@ -385,7 +387,7 @@
   <div class="container footer">
     <div class="row">
       <div class="col-8 col-sm-8">
-        <h3>Lawyer.com</h3>
+        <h3 style="color:white">Lawyer.com</h3>
         &copy;2020 Lawyer.com, All rights reserved.
         <span class="legalLinks">       
           <a>Terms of Use</a>
@@ -399,7 +401,7 @@
       </div>
       <div class="col-4 col-sm-4 address">
         25 Mountainview Blvd
-        </br> <!-- using br because line break for formatting is correct-->
+        </br> <!-- using br because line break for formatting  address is correct-->
         Basking Ridge NJ
         <div class="contactLinks"  style="padding-top:20px;">
           <a href="tel:+555-555-5555">555-555-5555</a>

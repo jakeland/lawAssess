@@ -18,8 +18,7 @@
   padding: 10px 20px;
   /* Remove IE arrow */
   /* Custom Select */
-  /* Arrow */
-  /* Transition */ }
+  /* Arrow */ }
   .heroSpacer select {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -61,26 +60,6 @@
     -webkit-transition: .25s all ease;
     -o-transition: .25s all ease;
     transition: .25s all ease; }
-  .heroSpacer .select:hover::after {
-    color: #f39c12; }
-
-.heroGroup {
-  position: relative;
-  margin-bottom: 10px; }
-  .heroGroup input {
-    border: 0; }
-  .heroGroup input::placeholder {
-    color: white; }
-  .heroGroup input:-ms-input-placeholder {
-    color: white; }
-  .heroGroup input::-ms-placeholder {
-    color: white; }
-  .heroGroup button, .heroGroup input, .heroGroup .dropdown-menu, .heroGroup .dropdown-item {
-    background-color: #51cbb0;
-    color: white;
-    text-align: right; }
-  .heroGroup, .heroGroup .wide, .heroGroup .dropdown-menu, .heroGroup .dropdown-item {
-    width: 100%; }
 
 .contactLinks a {
   display: block; }
@@ -96,13 +75,18 @@ h2.sectionTitle {
   padding-bottom: 20px; }
 
 h3.articleTitle {
+  margin-top: 20px;
   font-weight: bold;
   color: #024b6d;
   font-size: 1.5rem;
   margin-bottom: 40px; }
 
+.col-sm-4 h3.articleTitle {
+  font-size: 1.25rem; }
+
 html, body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif; }
 
 .dropdown-menu {
   height: 200px;
@@ -128,6 +112,8 @@ html, body {
   margin: 0 auto; }
 
 .navStyle {
+  padding-left: 40px;
+  padding-right: 40px;
   padding-bottom: 30px;
   background-color: white; }
   .navStyle a.navContent, .navStyle a.navContent:focus, .navStyle a.navContent:focus-within, .navStyle a.navContent:visited, .navStyle a.navContent:hover, .navStyle a.navContent:active {
@@ -167,11 +153,11 @@ html, body {
 .footer {
   position: relative;
   background: #3a3a3a;
-  color: white;
+  color: #aaaaaa;
   padding-top: 20px;
   padding-bottom: 20px; }
   .footer .address {
-    text-align: right; }
+    text-align: left; }
   .footer .legalLinks {
     display: block; }
     .footer .legalLinks a {
@@ -179,10 +165,11 @@ html, body {
       text-decoration: underline;
       cursor: pointer; }
   .footer .socialLinks img {
+    margin-right: 5px;
     max-width: 30px; }
   .footer .contactLinks a {
     text-decoration: none;
-    color: white; }
+    color: #aaaaaa; }
     .footer .contactLinks a:hover {
       text-decoration: underline; }
 
@@ -205,5 +192,21 @@ html, body {
   width: 100vw;
   position: absolute;
   background: #3a3a3a; }
+
+.outlineButton {
+  display: inline-block;
+  margin: 0 auto;
+  background-color: transparent;
+  color: #00cda5;
+  border: 2px solid #00cda6; }
+  .outlineButton .inner {
+    line-height: 2.5em;
+    padding: 30px 10px;
+    font-weight: bold; }
+
+.center {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
 /*# sourceMappingURL=index.css.map */
