@@ -43,6 +43,8 @@
     padding: 0 .5em;
     color: white;
     cursor: pointer; }
+    .heroSpacer select:disabled {
+      background: #6ef1dc; }
   .heroSpacer .select::after {
     color: white;
     content: '\25BC';
@@ -50,7 +52,7 @@
     top: 0;
     right: 0;
     padding: 0 1em;
-    background: #11b59b;
+    background: #0d8673;
     cursor: pointer;
     pointer-events: none;
     -webkit-transition: .25s all ease;
