@@ -38,9 +38,9 @@ $footer-link-color:#0bb979;
 	width:100%;
 
 }
-.heroSpacer{
-	//padding:0 20px;
 
+.heroCheat{
+	max-width:1900px;
 }
 
 .heroSpacer{
@@ -178,7 +178,14 @@ html, body {
 	}
 }
 
-//JMC: come back and optimize;
+@media (max-width: 810px) {
+	.inputBox{
+		width:100%;
+
+		left:0;
+	}
+}
+
 .imageHolder{
 	&.hero{
 		max-width:3000px;

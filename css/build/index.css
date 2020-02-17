@@ -10,6 +10,9 @@
 .hero {
   width: 100%; }
 
+.heroCheat {
+  max-width: 1900px; }
+
 .heroSpacer {
   /* Reset Select */
   padding: 10px 20px;
@@ -116,6 +119,10 @@ html, body {
   .inputBox .callToAction {
     font-size: 80px; }
 
+@media (max-width: 810px) {
+  .inputBox {
+    width: 100%;
+    left: 0; } }
 .imageHolder.hero {
   max-width: 3000px;
   margin: 0 auto; }
