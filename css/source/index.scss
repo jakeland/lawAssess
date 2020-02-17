@@ -194,15 +194,31 @@ html, body {
 }
 
 .navStyle{
-	height: $nav-height;
+
 	padding-bottom: $nav-pb;
 	background-color:white;
+
 	a.navContent{
 		&, &:focus, &:focus-within, &:visited, &:hover, &:active{
 			font-size:32px;
 			color:grey;
 		}
 
+	}
+	a.menuNav{
+		&, &:focus, &:focus-within, &:visited, &:hover, &:active{
+			font-size:20px;
+			color:$index-title-color;
+			font-weight: bold;
+			margin-right:20px;
+		}
+		&.touchButton{
+			color:white;
+			display:inline-block;
+			background: $nav-button-color;
+			padding:10px 30px;
+			border-radius: 5px;
+		}
 	}
 }
 

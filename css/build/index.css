@@ -128,12 +128,22 @@ html, body {
   margin: 0 auto; }
 
 .navStyle {
-  height: 60px;
   padding-bottom: 30px;
   background-color: white; }
   .navStyle a.navContent, .navStyle a.navContent:focus, .navStyle a.navContent:focus-within, .navStyle a.navContent:visited, .navStyle a.navContent:hover, .navStyle a.navContent:active {
     font-size: 32px;
     color: grey; }
+  .navStyle a.menuNav, .navStyle a.menuNav:focus, .navStyle a.menuNav:focus-within, .navStyle a.menuNav:visited, .navStyle a.menuNav:hover, .navStyle a.menuNav:active {
+    font-size: 20px;
+    color: #024b6d;
+    font-weight: bold;
+    margin-right: 20px; }
+  .navStyle a.menuNav.touchButton {
+    color: white;
+    display: inline-block;
+    background: #11b59b;
+    padding: 10px 30px;
+    border-radius: 5px; }
 
 .nav-adjust {
   margin-top: 60px; }
