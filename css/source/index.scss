@@ -184,18 +184,21 @@ html, body {
 	background-color:white;
 
 	a.navContent{
+		font-size:32px;
+		color: grey;
 		&, &:focus, &:focus-within, &:visited, &:hover, &:active{
-			font-size:32px;
 			color:grey;
 		}
 
 	}
 	a.menuNav{
+		color:$index-title-color;
+		font-size:20px;
+		margin-right:20px;
+		font-weight: bold;
 		&, &:focus, &:focus-within, &:visited, &:hover, &:active{
-			font-size:20px;
 			color:$index-title-color;
-			font-weight: bold;
-			margin-right:20px;
+			
 		}
 		&.touchButton{
 			color:white;

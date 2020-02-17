@@ -122,20 +122,24 @@ html, body {
   padding-right: 40px;
   padding-bottom: 30px;
   background-color: white; }
-  .navStyle a.navContent, .navStyle a.navContent:focus, .navStyle a.navContent:focus-within, .navStyle a.navContent:visited, .navStyle a.navContent:hover, .navStyle a.navContent:active {
+  .navStyle a.navContent {
     font-size: 32px;
     color: grey; }
-  .navStyle a.menuNav, .navStyle a.menuNav:focus, .navStyle a.menuNav:focus-within, .navStyle a.menuNav:visited, .navStyle a.menuNav:hover, .navStyle a.menuNav:active {
-    font-size: 20px;
+    .navStyle a.navContent, .navStyle a.navContent:focus, .navStyle a.navContent:focus-within, .navStyle a.navContent:visited, .navStyle a.navContent:hover, .navStyle a.navContent:active {
+      color: grey; }
+  .navStyle a.menuNav {
     color: #024b6d;
-    font-weight: bold;
-    margin-right: 20px; }
-  .navStyle a.menuNav.touchButton {
-    color: white;
-    display: inline-block;
-    background: #11b59b;
-    padding: 10px 30px;
-    border-radius: 5px; }
+    font-size: 20px;
+    margin-right: 20px;
+    font-weight: bold; }
+    .navStyle a.menuNav, .navStyle a.menuNav:focus, .navStyle a.menuNav:focus-within, .navStyle a.menuNav:visited, .navStyle a.menuNav:hover, .navStyle a.menuNav:active {
+      color: #024b6d; }
+    .navStyle a.menuNav.touchButton {
+      color: white;
+      display: inline-block;
+      background: #11b59b;
+      padding: 10px 30px;
+      border-radius: 5px; }
 
 .nav-adjust {
   margin-top: 60px; }
