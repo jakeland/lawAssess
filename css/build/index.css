@@ -1,8 +1,32 @@
-.callToAction {
-  font-size: 80px; }
+.actionWrapper {
+  padding: 30px; }
 
 .hero {
   width: 100%; }
+
+.heroGroup {
+  position: relative;
+  margin-bottom: 10px; }
+  .heroGroup input {
+    border: 0; }
+  .heroGroup input::placeholder {
+    color: white; }
+  .heroGroup input:-ms-input-placeholder {
+    color: white; }
+  .heroGroup input::-ms-placeholder {
+    color: white; }
+  .heroGroup button, .heroGroup input, .heroGroup .dropdown-menu, .heroGroup .dropdown-item {
+    background-color: #51cbb0;
+    color: white; }
+  .heroGroup, .heroGroup .wide, .heroGroup .dropdown-menu, .heroGroup .dropdown-item {
+    width: 100%; }
+
+.heroDrop {
+  background-color: green;
+  border: 1px solid green; }
+  .heroDrop:focus, .heroDrop:focus-within, .heroDrop:visited, .heroDrop:hover, .heroDrop:active {
+    border: 1px solid green;
+    background-color: green; }
 
 h2.sectionTitle {
   text-align: center; }
@@ -10,18 +34,33 @@ h2.sectionTitle {
 html, body {
   overflow-x: hidden; }
 
+.dropdown-menu {
+  height: 200px;
+  overflow-y: auto; }
+
 .inputBox {
   position: absolute;
   background: white;
-  width: 36%;
-  height: 70%;
+  width: 680px;
   left: 12%;
   top: 10%;
   opacity: 70%; }
+  .inputBox .callToAction {
+    font-size: 80px; }
 
 .imageHolder.hero {
   max-width: 3000px;
   margin: 0 auto; }
+
+.navStyle {
+  height: 60px;
+  padding-bottom: 30px;
+  background-color: white; }
+  .navStyle a.navContent {
+    font-size: 32px; }
+
+.nav-adjust {
+  margin-top: 60px; }
 
 .stateLawyers {
   position: relative;

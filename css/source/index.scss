@@ -1,11 +1,14 @@
 //Most stack's seem have a prefered method for asset management.  
 //This method is built to make it fairly easy to convert. 
 $nav-button-color: #11b59b;
+$nav-height:40px;
 $drop-down-button-color: #49c6ae;
 $drop-down-menu-color: #51cbb0;
 $footer-color: #3a3a3a;
 $lawyer-state: #01999d;
 $resources-button: #00cea6;
+$nav-height:60px;
+$nav-pb:30px;
 //depending on this answer, can switch it with just one color.
 
 @mixin gutter-fill{
@@ -18,13 +21,52 @@ $resources-button: #00cea6;
 	width:100vw;
 }
 
-.callToAction{
-	font-size:80px;
+.actionWrapper{
+	padding:30px;
 }
 
 .hero{
 	width:100%;
 
+}
+.heroSpacer{
+	//padding:0 20px;
+}
+.heroGroup{
+	position:relative;
+	
+	margin-bottom:10px;
+	input{
+		border:0;
+	}
+	input::placeholder{
+		color: white;
+	}
+	input:-ms-input-placeholder{
+		color:white;
+	}
+	input::-ms-placeholder{
+		color:white;
+	}
+	button, input, .dropdown-menu, .dropdown-item{
+		background-color: $drop-down-menu-color;
+		color: white;
+	}
+	&,& .wide, .dropdown-menu, .dropdown-item{
+		width:100%;
+	}
+	.dropdown-menu{
+		
+	}
+}
+
+.heroDrop {
+	background-color: green;
+	border: 1px solid green;
+	&:focus, &:focus-within, &:visited, &:hover, &:active{
+		border: 1px solid green;
+		background-color: green;
+	}
 }
 
 h2.sectionTitle{
@@ -36,14 +78,22 @@ html, body {
 	overflow-x:hidden;
 }
 
+
+.dropdown-menu{
+	height:200px;
+	overflow-y:auto;
+}
+
 .inputBox{
 	position:absolute;
 	background: white;
-	width:36%;
-	height:70%;
+	width:680px; // done in the interest of speed. 
 	left:12%;
 	top:10%;
 	opacity:70%;
+	.callToAction{
+		font-size:80px;
+	}
 }
 
 //JMC: come back and optimize;
@@ -52,6 +102,19 @@ html, body {
 		max-width:3000px;
  		margin:0 auto;
 	}
+}
+
+.navStyle{
+	height: $nav-height;
+	padding-bottom: $nav-pb;
+	background-color:white;
+	a.navContent{
+		font-size:32px;
+	}
+}
+
+.nav-adjust{
+	margin-top: $nav-height;
 }
 
 .stateLawyers{
