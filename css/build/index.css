@@ -10,6 +10,55 @@
 .hero {
   width: 100%; }
 
+.heroSpacer {
+  /* Reset Select */
+  padding: 10px 20px;
+  /* Remove IE arrow */
+  /* Custom Select */
+  /* Arrow */
+  /* Transition */ }
+  .heroSpacer select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: #11b59b;
+    background-image: none; }
+  .heroSpacer select::-ms-expand {
+    display: none; }
+  .heroSpacer .select {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    line-height: 3;
+    background: #2c3e50;
+    overflow: hidden;
+    border-radius: .25em; }
+  .heroSpacer select {
+    flex: 1;
+    padding: 0 .5em;
+    color: white;
+    cursor: pointer; }
+  .heroSpacer .select::after {
+    color: white;
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #11b59b;
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease; }
+  .heroSpacer .select:hover::after {
+    color: #f39c12; }
+
 .heroGroup {
   position: relative;
   margin-bottom: 10px; }
@@ -137,4 +186,5 @@ html, body {
   width: 100vw;
   position: absolute;
   background: #3a3a3a; }
+
 /*# sourceMappingURL=index.css.map */
