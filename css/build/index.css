@@ -10,8 +10,15 @@
 .hero {
   width: 100%; }
 
+.imageHolder.hero {
+  display: block;
+  margin: 0 auto; }
+  .imageHolder.hero, .imageHolder.hero .heroCheat {
+    max-width: 1900px; }
+
 .heroCheat {
-  max-width: 1900px; }
+  margin: 0 auto;
+  display: block; }
 
 .heroSpacer {
   /* Reset Select */
@@ -96,21 +103,20 @@ html, body {
   position: absolute;
   background: white;
   max-width: 700px;
-  left: 12%;
-  top: 10%;
   opacity: 70%;
-  width: 100%; }
+  width: 100%;
+  margin-top: 50px;
+  margin-left: 30px; }
   .inputBox .callToAction {
     font-size: 80px; }
 
 @media (max-width: 810px) {
   .inputBox {
     width: 100%;
-    left: 0; } }
-.imageHolder.hero {
-  max-width: 3000px;
-  margin: 0 auto; }
-
+    margin-top: 90px;
+    margin-left: 0px; }
+    .inputBox .callToAction {
+      font-size: 60px; } }
 .navStyle {
   padding-left: 40px;
   padding-right: 40px;

@@ -39,9 +39,18 @@ $footer-link-color:#0bb979;
 	width:100%;
 
 }
+.imageHolder.hero{
+	display:block;
+	margin:0 auto;
+	&, .heroCheat{
+		max-width:1900px;
+	}	
+}
 
 .heroCheat{
-	max-width:1900px;
+	
+	margin:0 auto;
+	display:block;
 }
 
 .heroSpacer{
@@ -147,10 +156,10 @@ html, body {
 	position:absolute;
 	background: white;
 	max-width:700px; // done in the interest of speed. 
-	left:12%;
-	top:10%;
 	opacity:70%;
 	width:100%;
+	margin-top: 50px;
+	margin-left: 30px;
 	.callToAction{
 		font-size:80px;
 	}
@@ -159,17 +168,14 @@ html, body {
 @media (max-width: 810px) {
 	.inputBox{
 		width:100%;
-
-		left:0;
+		margin-top:90px;
+		margin-left:0px;
+		.callToAction{
+			font-size:60px;
+		}
 	}
 }
 
-.imageHolder{
-	&.hero{
-		max-width:3000px;
- 		margin:0 auto;
-	}
-}
 
 .navStyle{
 	padding-left:40px;
