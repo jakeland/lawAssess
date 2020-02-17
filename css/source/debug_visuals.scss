@@ -1,0 +1,31 @@
+// this file contains scss which would normally only get loaded on development. 
+// There's a couple ways to achieve this. Normally this file is added to the git ignore. 
+// However, wanted to include everything I used to make the site work. 
+
+// This code will outline every element based on it's position relative to the top element.
+//  useful for targeting specific elements, seeing which element is extending beyond the bounds of it's parents,
+// and inspecting the positional effect of elements on there parents, siblings, etc.
+// change topmost element to target a specific element.
+
+* { outline: 2px dotted red;
+  * { outline: 2px dotted green;
+    * * { outline: 2px dotted orange;
+      * * * { outline: 2px dotted blue;
+        * * * * { outline: 1px solid red;
+          * * * * * { outline: 1px solid green;
+            * * * * * * { outline: 1px solid orange;
+              * * * * * * * { outline: 1px solid blue;
+                * * * * * * * * {outline:1px solid purple;
+                  * * * * * * * * * { outline: 1px solid yellow;
+                    * * * * * * * * * * { outline: 1px solid pink;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
